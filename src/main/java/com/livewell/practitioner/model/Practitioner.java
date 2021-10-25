@@ -11,36 +11,36 @@ public class Practitioner {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
-    private String firstName;
-    private String lastName;
-    private String practitionerId;
+    private String name;
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getPractitionerId() {
-        return practitionerId;
+    public Practitioner(String name) {
+        this.name = name;
     }
 
     public Practitioner() {
     }
 
-    public Practitioner(String firstName, String lastName, String practitionerId) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.practitionerId = practitionerId;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Practitioner{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

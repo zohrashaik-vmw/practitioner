@@ -1,0 +1,13 @@
+apiversion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: git
+spec:
+  type: git
+  params:
+    - name: revision
+      value: 970bd4d5ef1646e4a65d328e22aa26069bfa6972
+    - name: url
+      value: https://github.com/zohrashaik-vmw/patient
+  ~
+  ~
