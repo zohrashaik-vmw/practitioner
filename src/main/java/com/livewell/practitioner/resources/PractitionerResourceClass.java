@@ -15,9 +15,8 @@ public class PractitionerResourceClass {
     private PractitionerRepository practitionerRepository;
 
     public PractitionerResourceClass(PractitionerRepository practitionerRepository) {
-        this.practitionerRepository = practitionerRepository;
+        this.practitionerRepository = practitionerRepository;practitionerRepository.deleteAll();
         List<Practitioner> practitioners = new ArrayList<>();
-        practitioners.add(new Practitioner("Dean Jones"));
         practitioners.add(new Practitioner("Seema Gupta"));
         practitioners.add(new Practitioner("Daniel Cheema"));
         practitioners.add(new Practitioner("Brendan Hurrle"));
