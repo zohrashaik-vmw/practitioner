@@ -20,6 +20,7 @@ public class PractitionerResourceClass {
         practitioners.add(new Practitioner("Dean Jones"));
         practitioners.add(new Practitioner("Seema Gupta"));
         practitioners.add(new Practitioner("Daniel Cheema"));
+        practitioners.add(new Practitioner("Brendan Hurrle"));
         practitionerRepository.saveAll(practitioners);
     }
 
